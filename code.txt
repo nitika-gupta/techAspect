@@ -1,0 +1,117 @@
+import tkinter as tk
+
+"""printing the Recordfrom the database */"""
+
+def read_record(Roll_no):
+
+    try:
+        
+f= open('management.txt','r')   """Databse file used to hold record of students"""
+
+        if file.Roll_no == Roll_no:
+ 
+           print(Roll_no)
+           
+ print(First_name)
+           
+ print(Last_name)
+           
+ print(Branch)
+          
+  print(year)
+           
+ print(semester)
+        
+file.close()
+    
+except:
+       
+ print("Record not present")
+        
+    
+
+    
+"""Creating GUI using Tkinter for adding data into the database"""
+
+def add_record():
+   
+ try:
+        
+Text=e1.get()
+       
+ Text=e2.get()
+       
+ Text=e3.get()
+       
+ Text=e4.get()
+       
+ Text=e5.get()
+       
+ master=Tk()
+        
+master.title("Management system")
+      
+  Lable(master,Text='Roll no.').grid(column=0)
+    
+    Lable(master,Text='First name').grid(column=1)
+ 
+       Lable(master,Text='Last name').grid(column=2)
+      
+  Lable(master,Text='Branch').grid(colunm=3)
+    
+    Lable(master,Text='Year').grid(colunm=4)
+    
+    Lable(master,Text='Semester').grid(colunm=5)
+   
+     e1 = Entry(master) 
+      
+  e2 = Entry(master)
+    
+    e3 = Entry(master)
+      
+  e4 = Entry(master)
+       
+ e5 = Entry(master)
+     
+   e1.grid(row=0,colunm=0)
+     
+   e2.grid(row=0,colunm=1)
+    
+    e3.grid(row=0,colunm=2)
+      
+  e4.grid(row=0,colunm=3)
+    
+    e5.grid(row=0,colunm=4)
+      
+  mainloop()
+        
+       
+ file.close()
+    except:
+      
+  print("error occured")
+       
+ 
+"""printing list of all the students"""
+
+def student_list():
+    
+  
+  student=Tk()
+    
+Button(student,Text="show").grid(row=0)
+   
+ try:
+      
+  fl=open("Management_system")
+     
+   print(fl)
+   
+ except:
+       
+ print("did not find file")
+   
+ mainloop()
+
+
+
